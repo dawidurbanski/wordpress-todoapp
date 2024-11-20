@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "wp-now start",
+    "build": "wp-scripts build"
+  },
+  "dependencies": {
+    "@wordpress/scripts": "^30.5.1",
+    "@wp-now/wp-now": "^0.1.74"
+  }
+}
