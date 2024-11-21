@@ -15,5 +15,5 @@ function menu() {
 }
 
 function admin_page() {
-  echo '<div id="todo-app"></div>';
+  echo '<div class="wrap" id="todo-app"></div>';
 }

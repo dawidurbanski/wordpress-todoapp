@@ -1,0 +1,15 @@
+.filter {
+  align-self: stretch;
+}
+
+.filter > div,
+.filter > div > div,
+.filter > div > div > div {
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}

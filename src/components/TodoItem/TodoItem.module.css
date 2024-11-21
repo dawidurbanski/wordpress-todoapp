@@ -1,0 +1,25 @@
+.todo-list {
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  box-shadow: inset 0 0 0 1px #ccc;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.todo-item.completed .todo-name {
+  text-decoration: line-through;
+}
+
+.todo-item :global(.components-button.is-tertiary) {
+  box-shadow: none;
+}
+
+.todo-name-container {
+  flex: 1;
+}

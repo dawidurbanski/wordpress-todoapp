@@ -1,0 +1,9 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
