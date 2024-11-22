@@ -13,7 +13,8 @@ import { cn } from "../../utils";
 import styles from "./TodoItem.module.css";
 
 export default function TodoItem({ todoItem = {} }) {
-  const { id, title, meta } = todoItem;
+  const { id, title, meta, date } = todoItem;
+  const formattedDate = new Date(date).toLocaleString();
   const { saveEntityRecord, deleteEntityRecord } = useDispatch(coreDataStore);
 
   const [isEditing, setIsEditing] = useState(false);
@@ -53,7 +54,7 @@ export default function TodoItem({ todoItem = {} }) {
         onChange={() => toggleCompleted(meta.completed)}
         __nextHasNoMarginBottom
       />
-      <div className={styles["todo-name-container"]}>
+      <div className={styles["todo-info-container"]}>
         {isEditing ? (
           <InputControl
             value={newTitle}
@@ -61,7 +62,10 @@ export default function TodoItem({ todoItem = {} }) {
             __nextHasNoMarginBottom
           />
         ) : (
-          <span className={styles["todo-name"]}>{title.rendered}</span>
+          <div className={styles["todo-info"]}>
+            <span className={styles["todo-name"]}>{title.rendered}</span>
+            <small className={styles["todo-date"]}>{formattedDate}</small>
+          </div>
         )}
       </div>
       <ButtonGroup>

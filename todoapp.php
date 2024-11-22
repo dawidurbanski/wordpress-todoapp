@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WordPress Todo App
- * Version: 1.0.0
+ * Version: 1.0.1
  */
 
 define('TODOAPP_PLUGIN_DIR_PATH', plugin_dir_path(__FILE__));

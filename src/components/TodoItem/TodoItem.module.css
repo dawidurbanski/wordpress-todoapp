@@ -12,6 +12,11 @@
   font-weight: bold;
 }
 
+.todo-item.completed {
+  color: #979797;
+  background-color: rgb(237, 237, 237);
+}
+
 .todo-item.completed .todo-name {
   text-decoration: line-through;
 }
@@ -20,6 +25,16 @@
   box-shadow: none;
 }
 
-.todo-name-container {
+.todo-info-container {
   flex: 1;
+}
+
+.todo-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-date {
+  font-size: 10px;
+  font-weight: normal;
 }
