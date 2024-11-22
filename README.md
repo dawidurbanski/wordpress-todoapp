@@ -4,9 +4,12 @@ This is a demo of WordPress plugin with cusom UI built in React.
 
 Main features:
 
-- It includes adding, removing, editing, marking as complete and filtering todos.
-- This app persists all todos as WordPress custom post type posts with completed state stored in post metadata.
+- Includes adding, removing, editing, marking as complete and filtering todos.
+- Persists all todos as WordPress custom post type posts
+- Completed state stored in post metadata.
 - There is no custom REST endpoint registered. Everything is handled with native functions.
+
+Screenshot:
 
 ![CleanShot 2024-11-22 at 08 09 27@2x](https://github.com/user-attachments/assets/b29921a6-654a-427b-8035-5246c5e9c8ed)
 
@@ -18,7 +21,7 @@ There's not so much out there showing how it's done in practice so I made this l
 
 ## Demo
 
-[<img src="https://github.com/user-attachments/assets/544ea5f3-bd2d-4cca-bf78-b67577f74ab3" width="100"/>
+[<img src="https://github.com/user-attachments/assets/544ea5f3-bd2d-4cca-bf78-b67577f74ab3" width="120"/>
 ](https://playground.wordpress.net/?mode=seamless#{%22landingPage%22:%22/wp-admin/admin.php?page=todoapp%22,%22login%22:true,%22steps%22:[{%22step%22:%22installPlugin%22,%22pluginData%22:{%22resource%22:%22url%22,%22url%22:%22https://github-proxy.com/proxy/?repo=dawidurbanski/wordpress-todoapp&release=1.0.1&asset=todoapp.zip%22}}]})
 
 ## Running locally
