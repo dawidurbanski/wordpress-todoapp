@@ -12,7 +12,7 @@ function styles() {
   }
 
   wp_enqueue_style(
-    'wpappointments-admin-css',
+    'todoapp-admin-css',
     TODOAPP_PLUGIN_DIR_URL . '/build/index.css',
     array('wp-edit-blocks')
   );
